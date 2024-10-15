@@ -1,23 +1,276 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main" class="fullscreen-element">
+      <nav id="nav-bar" class="animate-intro cards">
+        <h1>Simon Gaviria</h1>
+        <nav id="nav-bar-items-container">
+          <ul>
+            <li>
+              <a href="#popup2" class="button">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#about-me-modal" class="button">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#contact-me-form" class="button">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+
+      <div id="content-wrapper">
+        <div id="main-content">
+          <div id="top-section" class="section">
+            <div id="info-about-me-wrapper">
+              <div id="info" class="cards">
+                <div id="icon-container">
+                  <img src="./assets/icons/React Icon.png" alt="React Icon" />
+                </div>
+                <div id="info-text">
+                  <h1>
+                    Software Engineer Redefining
+                    <span>User Interfaces</span> and <span>Apps</span> with AI
+                    Driven Design
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div id="self-img">
+              <div id="img-container">
+                <img
+                  src="./assets/self-img2.png"
+                  alt="Your image"
+                  class="animate"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="middle-section" class="section">
+            <div id="about-me" class="cards">
+              <p>
+                A skilled full-stack engineer based in NYC, known for developing
+                seamless web and mobile applications using React, React Native,
+                and Node.js. Combining frontend and backend expertise to deliver
+                high-performance, user-centered solutions across platforms. When
+                he's not coding, he enjoys DJing and creating art using code.
+              </p>
+            </div>
+            <div id="contact-me" class="cards">
+              <a href="#contact-me-form" class="button">
+                <div id="contact-me-container">
+                  <p>Have some questions?</p>
+                  <div id="arrow-icon-container">
+                    <img
+                      src="./assets/icons/Arrow top right.png"
+                      alt="React Icon"
+                    />
+                  </div>
+                </div>
+
+                <div id="contact-me-title">
+                  <h1>Contact Me</h1>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="side-content">
+          <div id="tech-stack" class="cards">
+            <h1>Current Work</h1>
+            <div id="temp">
+              <img
+                src="./assets/mountains-placeholder.webp"
+                alt="Your image"
+                class="animate"
+              />
+            </div>
+            <hr class="divider" />
+            <div>
+              <h1>Title 1</h1>
+            </div>
+            <hr class="divider" />
+            <div>
+              <h1>Title 2</h1>
+            </div>
+            <hr class="divider" />
+            <div>
+              <h1>Title 3</h1>
+            </div>
+          </div>
+
+          <div id="contact" class="cards">
+            <div class="contact">
+              <a
+                href="https://www.linkedin.com/in/simon-gaviria/"
+                class="contact-link"
+                target="_blank"
+              >
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://x.com/code_spagetti"
+                class="contact-link"
+                target="_blank"
+              >
+                <span>Twitter</span>
+              </a>
+              <a
+                href="https://github.com/MrRob0t404"
+                class="contact-link"
+                target="_blank"
+              >
+                <span>Github</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup2" class="overlay light">
+        <a class="cancel" href="#"></a>
+        <div class="popup">
+          <h2>Projects</h2>
+          <div class="content">
+            <p>Click outside the popup to close.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="about-me-modal" class="overlay light">
+        <a class="cancel" href="#"></a>
+        <div class="popup">
+          <div class="popup-content">
+            <div id="about-me-modal-text-container">
+              <h2>About me</h2>
+              <p>
+                Hello! I’m a skilled full-stack engineer based in the vibrant
+                city of New York. With a strong focus on developing seamless web
+                and mobile applications, I specialize in using technologies like
+                React, React Native, and Node.js to create high-performance,
+                user-centered solutions. My passion lies in combining my
+                frontend and backend expertise to build applications that not
+                only meet functional requirements but also provide an intuitive
+                user experience. I thrive on the challenge of transforming ideas
+                into reality, whether it's through innovative designs or
+                efficient coding practices. When I’m not immersed in code, you
+                can find me DJing at local events, curating playlists that
+                resonate with the crowd. I also enjoy exploring my artistic side
+                by creating visual art using code, blending technology and
+                creativity in unique ways. I believe that the best solutions
+                arise from a balance of technical skill and artistic vision.
+                Let’s connect and collaborate on your next project!
+              </p>
+              <iframe
+                width="100%"
+                height="600"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1847753778%3Fsecret_token%3Ds-dNQYikDWEvm&color=%23ff5500&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <div>
+                <a
+                  href="https://soundcloud.com/puro-mix"
+                  title="PURO"
+                  target="_blank"
+                  style="color: #cccccc; text-decoration: none"
+                >
+                  PURO
+                </a>
+                ·
+                <a
+                  href="https://soundcloud.com/puro-mix/a-lil-somthin-somethin/s-dNQYikDWEvm"
+                  title="A lil somthin somethin"
+                  target="_blank"
+                  style="color: #cccccc; text-decoration: none"
+                >
+                  A lil somthin somethin
+                </a>
+              </div>
+            </div>
+            <div id="about-modal-img-container">
+              <img src="./assets/DJ.JPG" alt="DJ" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div id="contact-me-form" class="overlay light">
+        <a class="cancel" href="#"></a>
+        <div class="popup">
+          <h2>Let's Connect!</h2>
+          <div class="formbold-main-wrapper">
+            <div class="formbold-form-wrapper">
+              <form id="contact-form" method="POST">
+                <div class="formbold-input-flex">
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Jane Doe"
+                      class="formbold-form-input"
+                    />
+                    <label for="name" class="formbold-form-label">
+                      Full Name
+                    </label>
+                  </div>
+                </div>
+
+                <div class="formbold-input-flex">
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="jhon@mail.com"
+                      class="formbold-form-input"
+                    />
+                    <label for="email" class="formbold-form-label">
+                      Email
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="(319) 555-0115"
+                      class="formbold-form-input"
+                    />
+                    <label for="phone" class="formbold-form-label">
+                      Phone
+                    </label>
+                  </div>
+                </div>
+
+                <div class="formbold-textarea">
+                  <textarea
+                    rows="6"
+                    name="message"
+                    id="message"
+                    placeholder="Give me a brief description of your idea!"
+                    class="formbold-form-input"
+                  ></textarea>
+                  <label for="message" class="formbold-form-label">
+                    Message
+                  </label>
+                </div>
+                <button class="formbold-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 }
