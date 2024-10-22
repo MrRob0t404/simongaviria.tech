@@ -1,0 +1,32 @@
+/* Middle Section */
+#middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  width: stretch;
+  margin: auto;
+}
+
+#experiernce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  width: stretch;
+  margin: 8px;
+}
+
+#music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -webkit-fill-available;
+  margin: 8px;
+}

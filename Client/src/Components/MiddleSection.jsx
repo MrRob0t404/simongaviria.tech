@@ -1,5 +1,7 @@
-import ".././assets/self-img2.png";
 import "../App.css";
+import "../Components/styles/middle-section.css";
+import selfImg from "../assets/self-img2.png";
+import ReactIcon from "../assets/self-img2.png";
 
 const MiddleSection = () => {
   return (
@@ -9,7 +11,7 @@ const MiddleSection = () => {
           <div id="info-about-me-wrapper">
             <div id="info" className="cards">
               <div id="icon-container">
-                <img src="./assets/icons/React Icon.png" alt="React Icon" />
+                <img src={ReactIcon} alt="React Icon" />
               </div>
               <div id="info-text">
                 <h1>
@@ -22,11 +24,7 @@ const MiddleSection = () => {
           </div>
           <div id="self-img">
             <div id="img-container">
-              <img
-                src="./assets/self-img2.png"
-                alt="Self_img"
-                className="animate"
-              />
+              <img src={selfImg} alt="Self img" className="animate" />
             </div>
           </div>
         </div>
