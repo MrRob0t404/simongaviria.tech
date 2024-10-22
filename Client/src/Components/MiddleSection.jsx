@@ -21,7 +21,7 @@ const MiddleSection = () => {
             <div id="img-container">
               <img
                 src="./assets/self-img2.png"
-                alt="Your image"
+                alt="Self_img"
                 class="animate"
               />
             </div>
