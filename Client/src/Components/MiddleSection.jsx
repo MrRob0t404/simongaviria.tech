@@ -1,10 +1,13 @@
+import ".././assets/self-img2.png";
+import "../App.css";
+
 const MiddleSection = () => {
   return (
     <div id="content-wrapper">
       <div id="main-content">
-        <div id="top-section" class="section">
+        <div id="top-section" className="section">
           <div id="info-about-me-wrapper">
-            <div id="info" class="cards">
+            <div id="info" className="cards">
               <div id="icon-container">
                 <img src="./assets/icons/React Icon.png" alt="React Icon" />
               </div>
@@ -22,13 +25,13 @@ const MiddleSection = () => {
               <img
                 src="./assets/self-img2.png"
                 alt="Self_img"
-                class="animate"
+                className="animate"
               />
             </div>
           </div>
         </div>
-        <div id="middle-section" class="section">
-          <div id="about-me" class="cards">
+        <div id="middle-section" className="section">
+          <div id="about-me" className="cards">
             <p>
               A skilled full-stack engineer based in NYC, known for developing
               seamless web and mobile applications using React, React Native,
@@ -37,8 +40,8 @@ const MiddleSection = () => {
               he's not coding, he enjoys DJing and creating art using code.
             </p>
           </div>
-          <div id="contact-me" class="cards">
-            <a href="#contact-me-form" class="button">
+          <div id="contact-me" className="cards">
+            <a href="#contact-me-form" className="button">
               <div id="contact-me-container">
                 <p>Have some questions?</p>
                 <div id="arrow-icon-container">
@@ -58,48 +61,48 @@ const MiddleSection = () => {
       </div>
 
       <div id="side-content">
-        <div id="tech-stack" class="cards">
+        <div id="tech-stack" className="cards">
           <h1>Current Work</h1>
           <div id="temp">
             <img
               src="./assets/mountains-placeholder.webp"
               alt="Your image"
-              class="animate"
+              className="animate"
             />
           </div>
-          <hr class="divider" />
+          <hr className="divider" />
           <div>
             <h1>Title 1</h1>
           </div>
-          <hr class="divider" />
+          <hr className="divider" />
           <div>
             <h1>Title 2</h1>
           </div>
-          <hr class="divider" />
+          <hr className="divider" />
           <div>
             <h1>Title 3</h1>
           </div>
         </div>
 
-        <div id="contact" class="cards">
-          <div class="contact">
+        <div id="contact" className="cards">
+          <div className="contact">
             <a
               href="https://www.linkedin.com/in/simon-gaviria/"
-              class="contact-link"
+              className="contact-link"
               target="_blank"
             >
               <span>LinkedIn</span>
             </a>
             <a
               href="https://x.com/code_spagetti"
-              class="contact-link"
+              className="contact-link"
               target="_blank"
             >
               <span>Twitter</span>
             </a>
             <a
               href="https://github.com/MrRob0t404"
-              class="contact-link"
+              className="contact-link"
               target="_blank"
             >
               <span>Github</span>

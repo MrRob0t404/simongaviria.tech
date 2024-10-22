@@ -4,21 +4,21 @@ import MiddleSection from "./Components/MiddleSection";
 
 function App() {
   return (
-    <div id="main" class="fullscreen-element">
+    <div id="main" className="fullscreen-element">
       <NavBar />
       <MiddleSection />
 
-      <div id="popup2" class="overlay light">
-        <a class="cancel" href="#"></a>
-        <div class="popup">
+      <div id="popup2" className="overlay light">
+        <a className="cancel" href="#"></a>
+        <div className="popup">
           <h2>Projects</h2>
-          <div class="content">
+          <div className="content">
             <p>Click outside the popup to close.</p>
           </div>
         </div>
       </div>
 
-      <div id="about-me-modal" class="overlay light">
+      <div id="about-me-modal" className="overlay light">
         <a className="cancel" href="#close">
           <span className="sr-only">Close</span>
         </a>
@@ -84,38 +84,38 @@ function App() {
         </div>
       </div>
 
-      {/* <div id="contact-me-form" class="overlay light">
-        <a class="cancel" href="#"></a>
-        <div class="popup">
+      {/* <div id="contact-me-form" className="overlay light">
+        <a className="cancel" href="#"></a>
+        <div className="popup">
           <h2>Let's Connect!</h2>
-          <div class="formbold-main-wrapper">
-            <div class="formbold-form-wrapper">
+          <div className="formbold-main-wrapper">
+            <div className="formbold-form-wrapper">
               <form id="contact-form" method="POST">
-                <div class="formbold-input-flex">
+                <div className="formbold-input-flex">
                   <div>
                     <input
                       type="text"
                       name="name"
                       id="name"
                       placeholder="Jane Doe"
-                      class="formbold-form-input"
+                      className="formbold-form-input"
                     />
-                    <label for="name" class="formbold-form-label">
+                    <label for="name" className="formbold-form-label">
                       Full Name
                     </label>
                   </div>
                 </div>
 
-                <div class="formbold-input-flex">
+                <div className="formbold-input-flex">
                   <div>
                     <input
                       type="email"
                       name="email"
                       id="email"
                       placeholder="jhon@mail.com"
-                      class="formbold-form-input"
+                      className="formbold-form-input"
                     />
-                    <label for="email" class="formbold-form-label">
+                    <label for="email" className="formbold-form-label">
                       Email
                     </label>
                   </div>
@@ -125,27 +125,27 @@ function App() {
                       name="phone"
                       id="phone"
                       placeholder="(319) 555-0115"
-                      class="formbold-form-input"
+                      className="formbold-form-input"
                     />
-                    <label for="phone" class="formbold-form-label">
+                    <label for="phone" className="formbold-form-label">
                       Phone
                     </label>
                   </div>
                 </div>
 
-                <div class="formbold-textarea">
+                <div className="formbold-textarea">
                   <textarea
                     rows="6"
                     name="message"
                     id="message"
                     placeholder="Give me a brief description of your idea!"
-                    class="formbold-form-input"
+                    className="formbold-form-input"
                   ></textarea>
-                  <label for="message" class="formbold-form-label">
+                  <label for="message" className="formbold-form-label">
                     Message
                   </label>
                 </div>
-                <button class="formbold-btn">Send Message</button>
+                <button className="formbold-btn">Send Message</button>
               </form>
             </div>
           </div>

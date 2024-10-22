@@ -1,21 +1,21 @@
 const NavBar = () => {
   return (
-    <nav id="nav-bar" class="animate-intro cards">
+    <nav id="nav-bar" className="animate-intro cards">
       <h1>Simon Gaviria</h1>
       <nav id="nav-bar-items-container">
         <ul>
           <li>
-            <a href="#popup2" class="button">
+            <a href="#popup2" className="button">
               Projects
             </a>
           </li>
           <li>
-            <a href="#about-me-modal" class="button">
+            <a href="#about-me-modal" className="button">
               About
             </a>
           </li>
           <li>
-            <a href="#contact-me-form" class="button">
+            <a href="#contact-me-form" className="button">
               Contact
             </a>
           </li>
