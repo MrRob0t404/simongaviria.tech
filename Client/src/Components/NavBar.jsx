@@ -1,3 +1,5 @@
+import "./styles/nav-bar.css";
+
 const NavBar = () => {
   return (
     <nav id="nav-bar" className="animate-intro cards">

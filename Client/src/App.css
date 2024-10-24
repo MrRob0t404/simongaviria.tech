@@ -36,202 +36,6 @@ body {
   width: 100%;
 }
 
-/* ---------- Intro ---------- */
-#nav-bar {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  justify-content: space-between;
-  margin: 25px 24px 25px 24px;
-  padding: 0 24px; /* Added right padding */
-  width: 1390px;
-}
-
-#nav-bar h1 {
-  margin: 0;
-}
-
-#nav-bar nav ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#nav-bar nav ul li {
-  margin-left: 48px;
-}
-
-/* Nav bar hover animation */
-#nav-bar nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-}
-
-#nav-bar-items-container {
-  margin: 0;
-}
-
-#nav-bar nav ul li a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: currentColor;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-#nav-bar nav ul li a:hover::after {
-  transform: scaleX(1);
-}
-
-/* ---------- First Third Section ---------- */
-#top-section {
-  display: flex;
-  align-items: flex-start;
-  margin: 0 25px 24px 25px;
-}
-
-#info-about-me-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-right: 25px;
-}
-
-#icon-container {
-  object-fit: contain;
-  align-items: right;
-  height: 119px;
-  width: 119px;
-  margin-left: auto;
-}
-
-#icon-container img {
-  height: 100%;
-  width: 100%;
-}
-
-#info {
-  height: 476px;
-  width: 565px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#info-text {
-  width: 80%;
-  font-family: "Gilroy-Bold", Comic Sans MS;
-  font-size: 22px;
-}
-
-#info-text span {
-  font-family: "Gilroy-LightItalic", Comic Sans MS;
-}
-
-#info-ul-container {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#self-img {
-  height: 476px;
-  width: 328px;
-  overflow: hidden;
-}
-
-#img-container {
-  width: 100%;
-  height: 100%;
-}
-
-#img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  opacity: 0;
-  transform: scale(0.5);
-}
-
-#img-container img.animate {
-  animation: fadeInAndSpread 0.5s ease-out forwards;
-}
-
-/* ---------- Second Third Section ---------- */
-#middle-section {
-  display: flex;
-  height: 32em;
-  width: 100%;
-  margin: 0 0 0 25px;
-}
-
-#about-me {
-  display: flex;
-  margin-right: 25px;
-  width: 447px;
-  height: 351px;
-  padding: 24px;
-}
-
-#about-me p {
-  font-family: "Gilroy-Light", Comic Sans MS;
-  text-align: left;
-  line-height: 25px;
-  font-size: 17px;
-  width: 70%;
-}
-
-#contact-me {
-  background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 24px;
-  width: 446px;
-  height: 351px;
-}
-
-#about-me-modal {
-  background-color: var(--background-color);
-}
-
-#contact-me-container {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Gilroy-Bold", Comic Sans MS;
-  text-align: left;
-  line-height: 18px;
-  color: black;
-  height: 38px;
-  width: auto;
-}
-
-#contact-me-title {
-  font-family: "Gilroy-Bold", Comic Sans MS;
-  text-align: left;
-  line-height: 25px;
-  font-size: x-large;
-  padding: 0;
-  margin: 0;
-  color: black;
-}
-
-#arrow-icon-container {
-  height: 38px;
-  width: 38px;
-}
-
-#arrow-icon-container img {
-  height: 100%;
-  width: 100%;
-}
-
 /* ---------- Right Most Section ---------- */
 #bottom-section {
   display: flex;
@@ -276,7 +80,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  opacity: 0;
+  /* opacity: 0; */
   transform: scale(0.5);
 }
 
@@ -290,13 +94,13 @@ body {
 }
 
 .cards {
-  border-radius: 20px;
   background-color: var(--primary-color);
+  border-radius: 20px;
   border: var(--border-color) 1px solid;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0.25rem 1.25rem 0px;
-  padding: 24px;
   box-sizing: border-box;
-  opacity: 0;
+  opacity: 1;
+  padding: 24px;
   transform: scale(0.5);
 }
 
@@ -384,70 +188,6 @@ body {
     height: 100%;
   }
 
-  /* Top Section */
-  #top-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    width: -moz-available; /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    width: stretch;
-  }
-
-  #info-about-me-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    width: -moz-available; /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    width: stretch;
-    height: 100%;
-    margin: auto;
-  }
-
-  #info {
-    margin-bottom: 16px;
-    height: 30%;
-    width: 100%;
-    width: -moz-available; /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    width: stretch;
-  }
-
-  #info-ul-container {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0; /* Remove default padding */
-  }
-
-  #about-me {
-    width: 100%;
-    width: -moz-available; /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    width: stretch;
-  }
-
-  #self-img {
-    width: 100%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: stretch;
-    margin: auto;
-  }
-
-  #temp {
-    width: 100%;
-    width: -moz-available; /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    width: stretch;
-  }
-
-  #temp img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
-
   /* Bottom Section */
   #bottom-section {
     display: flex;
@@ -527,15 +267,15 @@ body {
 }
 
 @media (max-width: 768px) {
-  #contact,
+  /* #contact,
   #tech-stack,
   #side-content {
     width: 100%;
-  }
+  } */
 
-  #contact {
-    height: 100px; /* You might want to adjust this for smaller screens */
-  }
+  /* #contact {
+    height: 100px; 
+  } */
 }
 
 @keyframes fadeInAndSpread {
@@ -575,7 +315,7 @@ body {
 
 /* If you need to adjust the layout for smaller screens */
 @media (max-width: 768px) {
-  #content-wrapper {
+  /* #content-wrapper {
     flex-direction: column;
   }
 
@@ -586,7 +326,7 @@ body {
   #tech-stack,
   #contact {
     width: 100%;
-  }
+  } */
 }
 
 .contact {

@@ -1,7 +1,9 @@
-import "../App.css";
-import "../Components/styles/middle-section.css";
 import selfImg from "../assets/self-img2.png";
-import ReactIcon from "../assets/self-img2.png";
+import ReactIcon from "../assets/icons/React Icon.png";
+
+// Styles
+import "../App.css";
+import "./styles/middle-section.css";
 
 const MiddleSection = () => {
   return (
@@ -63,8 +65,8 @@ const MiddleSection = () => {
           <h1>Current Work</h1>
           <div id="temp">
             <img
+              alt="project img"
               src="./assets/mountains-placeholder.webp"
-              alt="Your image"
               className="animate"
             />
           </div>
@@ -88,6 +90,7 @@ const MiddleSection = () => {
               href="https://www.linkedin.com/in/simon-gaviria/"
               className="contact-link"
               target="_blank"
+              rel="noreferrer"
             >
               <span>LinkedIn</span>
             </a>
@@ -95,6 +98,7 @@ const MiddleSection = () => {
               href="https://x.com/code_spagetti"
               className="contact-link"
               target="_blank"
+              rel="noreferrer"
             >
               <span>Twitter</span>
             </a>
@@ -102,6 +106,7 @@ const MiddleSection = () => {
               href="https://github.com/MrRob0t404"
               className="contact-link"
               target="_blank"
+              rel="noreferrer"
             >
               <span>Github</span>
             </a>
