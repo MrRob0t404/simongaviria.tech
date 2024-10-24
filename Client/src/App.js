@@ -1,13 +1,16 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
+import TopSection from "./Components/TopSection";
 import MiddleSection from "./Components/MiddleSection";
+import SideContent from "./Components/SideContent";
 
 function App() {
   return (
     <div id="main" className="fullscreen-element">
       <NavBar />
-      <MiddleSection />
-
+      <TopSection />
+      {/* <MiddleSection /> */}
+      {/* <SideContent /> */}
       {/* <div id="popup2" className="overlay light">
         <a className="cancel" href="#"></a>
         <div className="popup">

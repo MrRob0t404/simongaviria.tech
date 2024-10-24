@@ -7,7 +7,6 @@
 
 #info-about-me-wrapper {
   border: 10px solid #00d0ff; /* For debugging */
-  width: stretch;
 }
 
 #icon-container {
@@ -26,8 +25,6 @@
 #info {
   display: flex;
   flex-direction: column;
-  height: 476px !important;
-  width: 565px !important;
 }
 
 #info-text {
