@@ -7,11 +7,13 @@ import SideContent from "./Components/SideContent";
 function App() {
   return (
     <div id="main" className="fullscreen-element">
-      <NavBar />
-      <TopSection />
-      {/* <MiddleSection /> */}
-      {/* <SideContent /> */}
-      {/* <div id="popup2" className="overlay light">
+      <div id="content-wrapper">
+        <div id="main-content">
+          <NavBar />
+          <TopSection />
+          {/* <MiddleSection /> */}
+          {/* <SideContent /> */}
+          {/* <div id="popup2" className="overlay light">
         <a className="cancel" href="#"></a>
         <div className="popup">
           <h2>Projects</h2>
@@ -21,7 +23,7 @@ function App() {
         </div>
       </div> */}
 
-      {/* <div id="about-me-modal" className="overlay light">
+          {/* <div id="about-me-modal" className="overlay light">
         <a className="cancel" href="#close">
           <span className="sr-only">Close</span>
         </a>
@@ -87,7 +89,7 @@ function App() {
         </div>
       </div> */}
 
-      {/* <div id="contact-me-form" className="overlay light">
+          {/* <div id="contact-me-form" className="overlay light">
         <a className="cancel" href="#"></a>
         <div className="popup">
           <h2>Let's Connect!</h2>
@@ -154,6 +156,8 @@ function App() {
           </div>
         </div>
       </div> */}
+        </div>
+      </div>
     </div>
   );
 }
