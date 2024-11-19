@@ -8,18 +8,16 @@ import "./styles/top-section.css";
 const TopSection = () => {
   return (
     <div id="top-section" className="section">
-      <div id="info-about-me-wrapper">
-        <div id="info" className="cards">
-          <div id="icon-container">
-            <img src={ReactIcon} alt="React Icon" />
-          </div>
-          <div id="info-text">
-            <h1>
-              Software Engineer Redefining
-              <span>User Interfaces</span> and <span>Apps</span> with AI Driven
-              Design
-            </h1>
-          </div>
+      <div id="info" className="cards">
+        <div id="icon-container">
+          <img src={ReactIcon} alt="React Icon" />
+        </div>
+        <div id="info-text">
+          <h1>
+            Software Engineer Redefining
+            <span>User Interfaces</span> and <span>Apps</span> with AI Driven
+            Design
+          </h1>
         </div>
       </div>
       <div id="self-img">

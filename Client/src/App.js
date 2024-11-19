@@ -6,12 +6,12 @@ import SideContent from "./Components/SideContent";
 
 function App() {
   return (
-    <div id="main" className="fullscreen-element">
+    <div id="main">
       <div id="content-wrapper">
         <div id="main-content">
           <NavBar />
           <TopSection />
-          {/* <MiddleSection /> */}
+          <MiddleSection />
           {/* <SideContent /> */}
           {/* <div id="popup2" className="overlay light">
         <a className="cancel" href="#"></a>

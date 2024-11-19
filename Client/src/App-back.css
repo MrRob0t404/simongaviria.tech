@@ -16,17 +16,76 @@ a {
 }
 
 body {
-  align-items: center;
-  background-color: var(--background-color);
-  color: #424242;
+  padding: 0;
   display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+  align-items: center;
+  color: #424242;
   font-family: "Gilroy-Regular", Comic Sans MS;
+  font-optical-sizing: auto;
   font-style: normal;
   font-weight: 200;
-  justify-content: center;
+  height: 100%;
   margin: auto;
-  padding: 0;
   width: 1390px;
+}
+
+.fullscreen-element {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------- Right Most Section ---------- */
+#bottom-section {
+  display: flex;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 447px;
+  height: 100px;
+}
+
+#tech-stack {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%; /* Changed from fixed width */
+  max-width: 447px; /* Added max-width */
+  min-height: 726px; /* Changed from fixed height to min-height */
+  height: auto; /* Allow height to adjust based on content */
+  overflow-y: auto; /* Add scrollbar if content exceeds height */
+  margin-bottom: 24px;
+  padding: 24px;
+  overflow-x: hidden;
+}
+
+#tech-stack-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0;
+}
+
+#temp {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+#temp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  /* opacity: 0; */
+  transform: scale(0.5);
+}
+
+#temp img.animate {
+  animation: fadeInAndSpread 0.5s ease-out forwards;
 }
 
 /* ---------- Shared Properties ---------- */
@@ -42,7 +101,7 @@ body {
   box-sizing: border-box;
   opacity: 1;
   padding: 24px;
-  /* transform: scale(0.5); affecting size of cards */
+  transform: scale(0.5);
 }
 
 .divider {
@@ -101,6 +160,92 @@ body {
 }
 
 /* ---------- Media Queries ---------- */
+@media (max-width: 600px) {
+  body {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(240, 240, 240);
+    background: linear-gradient(
+      45deg,
+      rgba(240, 240, 240, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(240, 240, 240, 1) 98%
+    );
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+  }
+
+  .fullscreen-element {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Bottom Section */
+  #bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+    margin: 8px;
+  }
+
+  #tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 100%;
+    margin: 8px;
+  }
+
+  #tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tech-stack-card {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    align-content: space-evenly;
+    margin-right: 8px;
+  }
+
+  .tech-stack-card-icon {
+    padding: 16px;
+    margin: 8px;
+    border: rgb(156, 156, 156) 1px dashed;
+    border-radius: 8px;
+  }
+
+  .tech-stack-card-info {
+    /* overflow-wrap: anywhere; */
+    margin-right: 16px;
+  }
+
+  #tech-stack-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+}
+
 #content-wrapper {
   display: flex;
 }
@@ -119,6 +264,18 @@ body {
   height: 100px;
   width: 447px;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /* #contact,
+  #tech-stack,
+  #side-content {
+    width: 100%;
+  } */
+
+  /* #contact {
+    height: 100px; 
+  } */
 }
 
 @keyframes fadeInAndSpread {
@@ -156,7 +313,22 @@ body {
   margin-top: 25px;
 }
 
-/* ---------- Contact ---------- */
+/* If you need to adjust the layout for smaller screens */
+@media (max-width: 768px) {
+  /* #content-wrapper {
+    flex-direction: column;
+  }
+
+  #side-content {
+    width: 100%;
+  }
+
+  #tech-stack,
+  #contact {
+    width: 100%;
+  } */
+}
+
 .contact {
   display: flex;
   justify-content: space-evenly;
