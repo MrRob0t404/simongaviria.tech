@@ -26,6 +26,14 @@ const SideContent = () => {
         <div>
           <h1>Title 3</h1>
         </div>
+        <hr className="divider" />
+        <div>
+          <h1>Title 4</h1>
+        </div>
+        <hr className="divider" />
+        <div>
+          <h1>Title 5</h1>
+        </div>
       </div>
 
       <div id="contact" className="cards">

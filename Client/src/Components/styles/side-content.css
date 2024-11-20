@@ -11,13 +11,13 @@
   flex-direction: column;
   border: 1px solid rgb(0, 255, 0);
   width: 447px;
-  margin: 0 0 0 12.5px;
 }
 
 #side-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 0 0 12.5px;
 }
 
 #temp img {
