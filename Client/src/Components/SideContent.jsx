@@ -1,3 +1,6 @@
+import "./styles/side-content.css";
+import "../App.css";
+
 const SideContent = () => {
   return (
     <div id="side-content">

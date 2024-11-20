@@ -1,0 +1,19 @@
+#content-wrapper {
+  display: flex;
+}
+
+#main-content {
+  flex: 1;
+}
+
+#side-content {
+  width: 447px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact {
+  height: 100px;
+  width: 447px;
+  justify-content: center;
+}

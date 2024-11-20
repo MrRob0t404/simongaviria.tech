@@ -1,3 +1,6 @@
+import "./styles/middle-section.css";
+import "../App.css";
+
 const MiddleSection = () => {
   return (
     <div id="middle-section" className="section">

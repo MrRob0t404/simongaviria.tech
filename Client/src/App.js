@@ -1,4 +1,5 @@
 import "./App.css";
+
 import NavBar from "./Components/NavBar";
 import TopSection from "./Components/TopSection";
 import MiddleSection from "./Components/MiddleSection";
@@ -12,7 +13,7 @@ function App() {
           <NavBar />
           <TopSection />
           <MiddleSection />
-          {/* <SideContent /> */}
+          <SideContent />
           {/* <div id="popup2" className="overlay light">
         <a className="cancel" href="#"></a>
         <div className="popup">
