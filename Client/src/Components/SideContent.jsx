@@ -1,5 +1,6 @@
 import "./styles/side-content.css";
 import "../App.css";
+import mountains_placeholder from "../assets/mountains-placeholder.webp";
 
 const SideContent = () => {
   return (
@@ -9,7 +10,7 @@ const SideContent = () => {
         <div id="temp">
           <img
             alt="project img"
-            src="./assets/mountains-placeholder.webp"
+            src={mountains_placeholder}
             className="animate"
           />
         </div>

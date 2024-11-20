@@ -1,5 +1,6 @@
 import "./styles/middle-section.css";
 import "../App.css";
+import arrow_top_right from "../assets/icons/arrow_top_right.png";
 
 const MiddleSection = () => {
   return (
@@ -18,7 +19,10 @@ const MiddleSection = () => {
           <div id="contact-me-container">
             <p>Have some questions?</p>
             <div id="arrow-icon-container">
-              <img src="./assets/icons/Arrow top right.png" alt="React Icon" />
+              <img
+                src={arrow_top_right}
+                alt="Arrow_top_right_icon"
+              />
             </div>
           </div>
 

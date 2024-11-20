@@ -29,6 +29,16 @@ body {
   width: 1390px;
 }
 
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: row;
+}
+
 /* ---------- Shared Properties ---------- */
 .section {
   margin: 16px 0;
@@ -135,7 +145,6 @@ body {
 #middle-section {
   margin-top: 25px;
 }
-
 
 /* ---------- Modal CSS---------- */
 .overlay {

@@ -9,11 +9,15 @@ function App() {
   return (
     <div id="main">
       <div id="content-wrapper">
+        <NavBar />
         <div id="main-content">
-          <NavBar />
-          <TopSection />
-          <MiddleSection />
-          <SideContent />
+          <div id="main-content-container">
+            <TopSection />
+            <MiddleSection />
+          </div>
+          <div id="side-content-container">
+            <SideContent />
+          </div>
           {/* <div id="popup2" className="overlay light">
         <a className="cancel" href="#"></a>
         <div className="popup">
