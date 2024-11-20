@@ -1,6 +1,5 @@
 import selfImg from "../assets/self-img2.png";
 import ReactIcon from "../assets/icons/React Icon.png";
-
 // Styles - to review
 import "../App.css";
 import "./styles/top-section.css";

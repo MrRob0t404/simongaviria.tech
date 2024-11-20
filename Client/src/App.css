@@ -37,13 +37,10 @@ body {
 #main-content {
   display: flex;
   flex-direction: row;
+  border: 1px solid red;
 }
 
 /* ---------- Shared Properties ---------- */
-.section {
-  margin: 16px 0;
-}
-
 .cards {
   background-color: var(--primary-color);
   border-radius: 20px;
@@ -52,14 +49,8 @@ body {
   box-sizing: border-box;
   opacity: 1;
   padding: 24px;
+  margin: 12.5px
   /* transform: scale(0.5); affecting size of cards */
-}
-
-.divider {
-  width: 399px;
-  margin: 10px auto;
-  border: none;
-  border-top: 2px solid #4242422d; /* Adjust color as needed */
 }
 
 .experience-ul-container {
@@ -139,11 +130,6 @@ body {
 
 .animate-intro {
   animation: slideInFromLeft 1s ease-out forwards;
-}
-
-/* Ensure there's space between the image and "Latest release" section */
-#middle-section {
-  margin-top: 25px;
 }
 
 /* ---------- Modal CSS---------- */

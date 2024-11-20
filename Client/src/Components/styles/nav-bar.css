@@ -3,7 +3,7 @@
   display: flex;
   height: 100px;
   justify-content: space-between;
-  margin: 25px 24px 25px 24px;
+  /* margin: 25px 24px 25px 24px; */
   padding: 0 24px; /* Added right padding */
   width: 1390px;
 }

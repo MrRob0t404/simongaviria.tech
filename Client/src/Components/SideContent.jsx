@@ -5,7 +5,7 @@ import mountains_placeholder from "../assets/mountains-placeholder.webp";
 const SideContent = () => {
   return (
     <div id="side-content">
-      <div id="tech-stack" className="cards">
+      <div id="past-works" className="cards">
         <h1>Current Work</h1>
         <div id="temp">
           <img
@@ -29,32 +29,30 @@ const SideContent = () => {
       </div>
 
       <div id="contact" className="cards">
-        <div className="contact">
-          <a
-            href="https://www.linkedin.com/in/simon-gaviria/"
-            className="contact-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>LinkedIn</span>
-          </a>
-          <a
-            href="https://x.com/code_spagetti"
-            className="contact-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Twitter</span>
-          </a>
-          <a
-            href="https://github.com/MrRob0t404"
-            className="contact-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Github</span>
-          </a>
-        </div>
+        <a
+          href="https://www.linkedin.com/in/simon-gaviria/"
+          className="contact-link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>LinkedIn</span>
+        </a>
+        <a
+          href="https://x.com/code_spagetti"
+          className="contact-link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>Twitter</span>
+        </a>
+        <a
+          href="https://github.com/MrRob0t404"
+          className="contact-link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>Github</span>
+        </a>
       </div>
     </div>
   );

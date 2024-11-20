@@ -1,8 +1,8 @@
 /* ---------- Top Section ---------- */
 #top-section {
-  border: 1px solid red;
+  border: 1px solid rgb(0, 13, 255);
   display: flex;
-  margin: 0 25px 0 25px;
+  /* margin: 0 25px 0 25px; */
 }
 
 #icon-container {
@@ -10,7 +10,7 @@
   align-items: right;
   height: 120px;
   width: 120px;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 #icon-container img {
@@ -39,7 +39,7 @@
   height: 476px;
   width: 328px;
   overflow: hidden;
-  margin: 0 25px 0 25px;
+  margin: 12.5px 0 0 25px;
 }
 
 #img-container {

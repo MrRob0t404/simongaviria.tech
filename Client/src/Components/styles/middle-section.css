@@ -2,8 +2,8 @@
 #middle-section {
   display: flex;
   align-items: center;
-  border: 1px solid blue;
-  margin: 25px;
+  border: 1px solid rgb(0, 255, 251);
+  /* margin: 25px; */
 }
 
 #music {
@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   width: -webkit-fill-available;
-  margin: 8px;
+  /* margin: 8px; */
 }
 
 #about-me {
