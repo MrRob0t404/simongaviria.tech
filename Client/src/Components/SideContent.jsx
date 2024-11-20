@@ -11,7 +11,6 @@ const SideContent = () => {
           <img
             alt="project img"
             src={mountains_placeholder}
-            className="animate"
           />
         </div>
         <hr className="divider" />

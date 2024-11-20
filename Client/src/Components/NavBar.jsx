@@ -1,8 +1,9 @@
 import "./styles/nav-bar.css";
+import "../App.css";
 
 const NavBar = () => {
   return (
-    <nav id="nav-bar" className="animate-intro cards">
+    <nav id="nav-bar" className="cards">
       <h1>Simon Gaviria</h1>
       <nav id="nav-bar-items-container">
         <ul>

@@ -1,8 +1,6 @@
 /* ---------- Top Section ---------- */
 #top-section {
-  border: 1px solid rgb(0, 13, 255);
   display: flex;
-  /* margin: 0 25px 0 25px; */
 }
 
 #icon-container {
@@ -10,7 +8,6 @@
   align-items: right;
   height: 120px;
   width: 120px;
-  /* margin-left: auto; */
 }
 
 #icon-container img {
@@ -52,9 +49,4 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  transform: scale(0.5);
-}
-
-#img-container img.animate {
-  animation: fadeInAndSpread 0.5s ease-out forwards;
 }

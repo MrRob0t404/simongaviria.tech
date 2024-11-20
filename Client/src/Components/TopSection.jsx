@@ -21,7 +21,7 @@ const TopSection = () => {
       </div>
       <div id="self-img">
         <div id="img-container">
-          <img src={selfImg} alt="Self img" className="animate" />
+          <img src={selfImg} alt="Self img" />
         </div>
       </div>
     </div>

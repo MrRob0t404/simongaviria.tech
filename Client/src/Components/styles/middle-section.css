@@ -2,7 +2,6 @@
 #middle-section {
   display: flex;
   align-items: center;
-  border: 1px solid rgb(0, 255, 251);
 }
 
 #music {
