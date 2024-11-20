@@ -34,6 +34,7 @@ const SideContent = () => {
         <div>
           <h1>Title 5</h1>
         </div>
+        <hr className="divider" />
       </div>
 
       <div id="contact" className="cards">

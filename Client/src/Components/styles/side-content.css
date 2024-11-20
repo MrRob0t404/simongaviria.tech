@@ -10,14 +10,13 @@
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(0, 255, 0);
-  width: 447px;
 }
 
 #side-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 0 0 12.5px;
+  width: 100%;
 }
 
 #temp img {
@@ -29,10 +28,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100px;
 }
 
 #past-works {
-  height: 726px;
+  max-height: 726px;
+  overflow: auto;
 }
 
 .divider {
