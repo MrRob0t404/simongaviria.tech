@@ -67,22 +67,23 @@ body {
 #active {
   list-style-type: none;
   padding-left: 0;
+  color: black
 }
 
 #active .active-item {
-  padding-left: 20px; /* Adjust padding to make space for custom bullet */
+  padding-left: 20px;
   position: relative;
 }
 
 #active .non-active-item {
-  padding-left: 20px; /* Adjust padding to make space for custom bullet */
+  padding-left: 20px;
   position: relative;
 }
 
 #active .active-item::before {
-  background-color: green; /* Green light color */
-  border-radius: 50%; /* Make it round */
-  box-shadow: 0 0 10px green; /* Glow effect */
+  background-color: green;
+  border-radius: 50%;
+  box-shadow: 0 0 10px green;
   content: "";
   height: 10px;
   left: 0;
@@ -93,9 +94,9 @@ body {
 }
 
 #active .non-active-item::before {
-  background-color: grey; /* Green light color */
-  border-radius: 50%; /* Make it round */
-  box-shadow: 0 0 10px grey; /* Glow effect */
+  background-color: grey;
+  border-radius: 50%;
+  box-shadow: 0 0 10px grey;
   content: "";
   height: 10px;
   left: 0;

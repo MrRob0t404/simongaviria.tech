@@ -30,7 +30,7 @@ export default function BasicModal({ label, content }) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={style} className="popup">
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {content}
           </Typography>

@@ -1,6 +1,8 @@
 import "./styles/side-content.css";
 import "../App.css";
 import mountains_placeholder from "../assets/mountains-placeholder.webp";
+import BasicModal from "./Modal";
+import resumePDF from "../assets/Resume.pdf";
 
 const SideContent = () => {
   return (
@@ -8,10 +10,7 @@ const SideContent = () => {
       <div id="past-works" className="cards">
         <h1>Current Work</h1>
         <div id="temp">
-          <img
-            alt="project img"
-            src={mountains_placeholder}
-          />
+          <img alt="project img" src={mountains_placeholder} />
         </div>
         <hr className="divider" />
         <div>
@@ -61,6 +60,19 @@ const SideContent = () => {
         >
           <span>Github</span>
         </a>
+        <BasicModal
+          id="resume-modal"
+          label="Resume"
+          content={
+            <iframe
+              src={resumePDF}
+              title="Resume"
+              width="100%"
+              height="600px"
+              style={{ border: "none" }}
+            />
+          }
+        />
       </div>
     </div>
   );
